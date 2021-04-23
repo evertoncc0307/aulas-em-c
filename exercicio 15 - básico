@@ -1,19 +1,14 @@
-#include <math.h>
 #include <stdio.h>
+#include <math.h>
 
-int main(void) {
-float a,b,c,d,distancia,p1,p2,rq;
+int main()
+{
+    double x1, x2, y1, y2, dist;
 
-scanf("%f%f%f%f",&a,&b,&c,&d);
+    scanf("%lf %lf %lf %lf", &x1, &y1, &x2, &y2);
 
-p1 = (a - b);
-p1 = pow(p1, 2);
+    dist = sqrt(pow(x2-x1,2)+pow(y2-y1,2));
 
-p2 = (c - d);
-p2 = pow(p1, 2);
-rq = p1 + p2;
-
-distancia = sqrt(rq);
-printf("%f",distancia);	
-return 0;
+    printf("%.4lf\n", dist);
+    return 0;
 }
