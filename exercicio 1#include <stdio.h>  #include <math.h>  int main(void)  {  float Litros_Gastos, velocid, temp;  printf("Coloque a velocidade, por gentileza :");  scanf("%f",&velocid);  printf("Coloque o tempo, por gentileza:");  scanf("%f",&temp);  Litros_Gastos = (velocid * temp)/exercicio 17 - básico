@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#include <math.h>
+
+int main(void)
+
+{
+
+float Litros_Gastos, velocid, temp;
+
+printf("Coloque a velocidade, por gentileza :");
+
+scanf("%f",&velocid);
+
+printf("Coloque o tempo, por gentileza:");
+
+scanf("%f",&temp);
+
+Litros_Gastos = (velocid * temp)/12;
+
+printf("Litros Gastos:%0.3f",Litros_Gastos);
+
+return (0);
+
+}
