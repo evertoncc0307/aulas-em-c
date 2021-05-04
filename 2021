@@ -1,0 +1,70 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    double x;
+    int nota2,nota5,nota10,nota20,nota50,nota100,moeda1;
+    int moeda05,moeda025,moeda010,moeda005,moeda001;
+    
+    scanf("%lf",&x);
+    
+    //validacao com nota de 100
+    nota100 = x/100;
+    x -= nota100*100;
+ 
+    //validacao com nota de 50
+    nota50 = x/50;
+    x -= nota50*50;
+    
+    //validacao com nota de 20
+    nota20 = x/20;
+    x -= nota20*20;
+    
+    //validacao com nota de 10
+    nota10 = x/10;
+    x -= nota10*10;
+    
+    //validacao com nota de 5
+    nota5 = x/5;
+    x -= nota5*5;
+    
+    //validacao com nota de 2
+    nota2 = x/2;
+    x -= nota2*2;
+    
+    //validaçao de moedas/////////////////////
+    
+    moeda1 = x/1;
+    x -= moeda1*1;
+    
+    moeda05 = x/0.50;
+    x -= moeda05 * 0.50;
+    
+    moeda025 = x/0.25;
+    x -= moeda025 * 0.25;
+    
+    moeda010 = x/0.10;
+    x -= moeda010 * 0.10;
+    
+     moeda005 = x/0.05;
+    x -= moeda005 * 0.05;
+    
+     moeda001 = x/0.01;
+    x -= moeda001 * 0.01;
+    
+    
+    printf("NOTAS:\n%d nota(s) de R$ 100.00\n",nota100);
+    printf("%d nota(s) de R$ 50.00\n",nota50);
+    printf("%d nota(s) de R$ 20.00\n",nota20);
+    printf("%d nota(s) de R$ 10.00\n",nota10);
+    printf("%d nota(s) de R$ 5.00\n",nota5);
+    printf("%d nota(s) de R$ 2.00\n",nota2);
+    printf("MOEDAS:\n%d moeda(s) de R$ 1.00\n",moeda1);
+    printf("%d moeda(s) de R$ 0.50\n",moeda05);
+    printf("%d moeda(s) de R$ 0.25\n",moeda025);
+    printf("%d moeda(s) de R$ 0.10\n",moeda010);
+    printf("%d moeda(s) de R$ 0.05\n",moeda005);
+    printf("%d moeda(s) de R$ 0.01\n",moeda001);
+    
+    return 0;
+}
